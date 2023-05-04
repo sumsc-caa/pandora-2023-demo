@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>人才招聘系统</title>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+  <div class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+    <div class="loginbox border border-secondary bg-white border-2 p-4 rounded">
+      <h3 class="text-center">登录</h3>
+      <form action="/login" method="post">
+
+        <label for="username" class="form-label">用户名</label>
+        <input type="text" class="form-control mb-3" name="username" value="{{username}}">
+
+        <label for="password" class="form-label">密码</label>
+        <input type="password" class="form-control mb-3" name="password">
+
+        <div class="text-center">
+          {% if errmsg %}
+          <div class="text-danger mt-1">{{errmsg}}</div>
+          {% endif %}
+          <input type="submit" class="btn btn-primary mt-1" value="登录" />
+          <a href="/register" class="btn btn-outline-secondary mt-1" type="button">注册</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
