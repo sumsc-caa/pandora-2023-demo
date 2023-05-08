@@ -128,3 +128,7 @@ def register():
                 return jump("注册成功", '/login', '跳转至登录页')
 
     return render_template("register.html", errmsg = errmsg)
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000, debug=True)
