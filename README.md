@@ -16,7 +16,7 @@ $ cd pandora-2023-A-demo
 然后使用python-venv创建并激活虚拟环境（参见[官方文档](https://docs.python.org/zh-cn/3/library/venv.html)）
 ```bash
 $ python -m venv ./venv
-> .\env\Scripts\activate     # for Windows
+> .\venv\Scripts\activate     # for Windows
 $ source ./venv/bin/activate # for Linux
 ```
 
